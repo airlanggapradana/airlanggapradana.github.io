@@ -1,0 +1,55 @@
+
+.jumbotron{
+    padding: 2rem 1rem;
+    background-image: url(background_2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#projects{
+    background-color: #273036;
+    color: white;
+}
+
+@keyframes fade-in{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide-in{
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0px;}
+}
+
+@keyframes slide-left{
+    from {opacity: 0; right: -200px;}
+    to {opacity: 1; right: 0px;}
+}
+
+.jumbotron h1{
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+}
+
+.jumbotron p{
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+.jumbotron img{
+    position: relative;
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+#about .row{
+    position: relative;
+    animation-name: slide-left;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
